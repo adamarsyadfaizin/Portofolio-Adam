@@ -1,0 +1,2 @@
+export const ABOUT =
+  "Saya seorang Mahasiswa D4 Teknik Informatika Politeknik Negeri Malang dengan pengalaman dalam mengembangkan berbagai aplikasi dan perangkat lunak. Fokus utama saya adalah Application Development, didukung oleh Cybersecurity sebagai hobi kedua saya serta penerapan Data Processing/Automation dalam pengembangan solusi teknologi. Saya selalu tertarik mempelajari dan mengeksplorasi hal-hal baru seputar pengembangan aplikasi untuk memecahkan berbagai problem nyata melalui solusi teknologi yang tepat.";
