@@ -143,7 +143,7 @@ export const STACKS: SkillProps = {
     icon: <BsGearFill size={iconSize} />,
     background: "bg-teal-600",
     color: "text-teal-500",
-    isActive: false,
+    isActive: true,
   },
   "Chrome Extension": {
     icon: <SiGooglechrome size={iconSize} />,
@@ -155,7 +155,7 @@ export const STACKS: SkillProps = {
     icon: <BsEye size={iconSize} />,
     background: "bg-indigo-600",
     color: "text-indigo-400",
-    isActive: false,
+    isActive: true,
   },
   "Data Processing/Automation": {
     icon: <BsRobot size={iconSize} />,

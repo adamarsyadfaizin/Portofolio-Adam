@@ -112,125 +112,186 @@ export const MOCK_TIKTOK_VIDEOS: VideoItem[] = [
 export const MOCK_PROJECTS: ProjectItem[] = [
   {
     id: 1,
-    title: "CKG Helper Software — Healthcare Data Entry Automation System",
+    title: "CKG Helper — Healthcare Data Entry Automation",
     slug: "ckg-helper",
     description:
-      "Sistem otomatisasi berbasis Python dan Chrome Extension yang dikembangkan untuk mempercepat proses administrasi dan entri data massal bagi program Pemeriksaan Kesehatan Gratis (CKG) di Puskesmas Garum.",
+      "Tools automasi yang dikembangkan untuk membantu staf Puskesmas Garum dalam proses entri data Cek Kesehatan Gratis (CKG) melalui website Sehat Indonesiaku.",
+    description_en:
+      "An automation tool developed to help Puskesmas Garum staff with Free Health Check (CKG) data entry through the Sehat Indonesiaku website.",
     image: "/images/projects/ckg-helper.png",
-    link_demo: "https://sehatindonesiaku.kemkes.go.id/",
+    link_demo: "",
     link_github: "https://github.com/adamarsyadfaizin/ckg-helper-releases/releases",
-    stacks: ["Python", "Automation", "Chrome Extension"],
+    stacks: ["Python", "Automation"],
     content: `### Overview
 
-CKG Helper Software adalah sistem otomatisasi yang dikembangkan untuk mempercepat proses administrasi dan entri data bagi program Pemeriksaan Kesehatan Gratis (CKG). Sistem ini memungkinkan staf untuk memproses data peserta secara massal menggunakan berkas Excel, kemudian mengotomatiskan pendaftaran serta penginputan hasil pemeriksaan ke dalam platform layanan CKG Kementerian Kesehatan.
+CKG Helper adalah tools automasi yang dikembangkan untuk membantu staf Puskesmas Garum dalam proses entri data Cek Kesehatan Gratis (CKG) melalui website Sehat Indonesiaku.
 
-Dengan demikian, staf medis tidak perlu lagi memasukkan data secara manual dan berulang untuk setiap peserta. CKG Helper mendukung layanan CKG Umum maupun CKG Sekolah, dirancang untuk menangani berbagai skenario data maupun kendala yang mungkin muncul selama proses entri data berlangsung.
+### Tujuan
 
-### Fitur Utama
-- **Batch Excel Processing:** Memproses ratusan data peserta secara massal langsung dari template berkas Excel.
-- **Automated Registration & Results:** Mengotomatiskan registrasi pasien dan input hasil pemeriksaan secara akurat ke platform Sehat IndonesiaKu (ASIK).
-- **Multi-Service Support:** Mendukung alur kerja CKG Umum dan CKG Sekolah dengan penyesuaian parameter dinamis.
-- **Smart Error Handling:** Menangani berbagai skenario ketidaksesuaian data secara cerdas dan aman.
+- Membantu staf dalam menjalankan proses entri data CKG.
+- Mengotomatisasi bagian dari proses entri data yang berulang.
+- Menyediakan solusi perangkat lunak berdasarkan kebutuhan operasional Puskesmas Garum.`,
+    content_en: `### Overview
 
-### Dampak
-Mengurangi waktu penginputan hingga lebih dari 80%, mengeliminasi beban manual petugas fasilitas kesehatan primer, dan mencegah kesalahan pengetikan rekam medis.`,
+CKG Helper is an automation tool developed to help Puskesmas Garum staff with the Free Health Check (CKG) data-entry process through the Sehat Indonesiaku website.
+
+### Goals
+
+- Assist staff with the CKG data-entry process.
+- Automate repetitive parts of data entry.
+- Provide a software solution based on Puskesmas Garum's operational needs.`,
     is_show: true,
     is_featured: true,
     featured_tag: "Real Case",
   },
   {
     id: 2,
-    title: "CORDS APP — Fish Enumeration & Measurement",
+    title: "CORDS AI Application — Computer Vision for Fisheries",
     slug: "cords-app",
     description:
-      "Aplikasi kecerdasan buatan berbasis Computer Vision dan Deep Learning untuk mendeteksi, mengklasifikasikan jenis ikan, serta mengestimasi ukuran tubuh ikan secara otomatis dan presisi melalui input visual.",
+      "Berkontribusi dalam pengembangan aplikasi CORDS berbasis computer vision untuk platform perikanan cerdas, mencakup deteksi ikan, segmentasi, dan identifikasi spesies.",
+    description_en:
+      "Contributed to the CORDS computer vision application for a smart fisheries platform, covering fish detection, segmentation, and species identification.",
     image: "/images/projects/cords-app.png",
     link_demo: "",
     link_github: "",
-    stacks: ["Python", "Computer Vision", "Data Processing/Automation", "AI"],
+    stacks: ["Python", "Computer Vision"],
     content: `### Overview
 
-CORDS APP adalah aplikasi berbasis kecerdasan buatan yang dirancang untuk mendeteksi dan mengklasifikasikan jenis ikan serta mengestimasi ukuran tubuh ikan secara otomatis melalui input gambar atau rekaman video real-time.
+CORDS merupakan aplikasi berbasis computer vision untuk platform perikanan cerdas. Saya berkontribusi dalam pengembangan aplikasi ini sebagai Application Developer di MLabs.
 
-Aplikasi ini memanfaatkan teknologi Data Processing/Automation, Deep Learning, Computer Vision, serta teknologi pengembangan aplikasi lainnya untuk menghasilkan analisis ikan secara otomatis, efisien, dan terukur. Proyek ini dikembangkan bersama MLabs.
+### Ruang Lingkup Kontribusi
 
-### Kemampuan Utama
-- **Real-Time Fish Detection:** Model AI mendeteksi posisi ikan dan bounding box secara cepat pada live feed kolam/akuarium.
-- **Species Classification:** Mengidentifikasi ragam jenis ikan secara otomatis (Koi, Ikan Mas, Goldfish, dll).
-- **Automated Size Measurement:** Mengukur estimasi panjang tubuh ikan (dalam cm) tanpa kontak langsung.
-- **Monitoring & Metrics Dashboard:** Menyajikan visualisasi data, penghitungan jumlah total ikan, serta ringkasan ukuran real-time.
+- Deteksi ikan.
+- Segmentasi objek ikan.
+- Identifikasi spesies ikan.
 
-### Status Repositori
-Private Repository (MLabs).`,
+Repositori proyek bersifat privat.`,
+    content_en: `### Overview
+
+CORDS is a computer vision application for a smart fisheries platform. I contributed to its development as an Application Developer at MLabs.
+
+### Contribution Areas
+
+- Fish detection.
+- Fish segmentation.
+- Species identification.
+
+The project repository is private.`,
     is_show: true,
     is_featured: true,
-    featured_tag: "Real Case",
+    featured_tag: "Professional Contribution",
   },
   {
     id: 3,
     title: "SkinSight — Smart Skin Health Analysis",
     slug: "skinsight",
     description:
-      "Aplikasi mobile berbasis Data Processing/Automation untuk mendeteksi dan mengidentifikasi permasalahan kulit wajah melalui pemindaian visual, dilengkapi treatment timeline serta pelacak progres perawatan.",
+      "Aplikasi mobile yang membantu mengidentifikasi permasalahan kulit wajah melalui pemindaian visual serta menyajikan timeline perawatan dan pemantauan progres.",
+    description_en:
+      "A mobile application that helps identify facial skin concerns through visual scanning and provides a treatment timeline and progress tracking.",
     image: "/images/projects/skinsight.png",
     link_demo: "",
     link_github: "https://github.com/orgs/SkinSight-DeteksiMasalahKulitWajah/repositories",
-    stacks: ["Dart (Flutter)", "Flutter", "Data Processing/Automation", "Python"],
+    stacks: ["Dart (Flutter)", "Flutter", "Python"],
     content: `### Overview
 
-SkinSight adalah aplikasi mobile berbasis data processing/automation yang dirancang untuk mendeteksi dan mengidentifikasi permasalahan kulit wajah melalui pemindaian visual. Proyek ini dikembangkan dalam lingkup riset terapan di Politeknik Negeri Malang.
+SkinSight adalah aplikasi mobile yang dikembangkan untuk membantu mengidentifikasi permasalahan kulit wajah melalui pemindaian visual. Hasil pemindaian digunakan sebagai dasar penyusunan timeline perawatan dan pemantauan progres kondisi kulit.
 
-Berdasarkan hasil pemindaian, aplikasi akan menyusun treatment timeline yang berisi rekomendasi perawatan serta tahapan perkembangan kondisi kulit untuk membantu pengguna memantau proses perbaikannya secara mandiri.
+### Peran
 
-### Fitur Utama
-- **Visual Skin Scanning:** Kuis singkat dan pemindaian foto wajah untuk menganalisis temuan visual kulit.
-- **Treatment Timeline:** Rekomendasi tahapan perawatan terstruktur yang dipersonalisasi sesuai jenis kulit.
-- **Skin Journey Tracker:** Grafik pemantauan berkala untuk mencatat dan mengevaluasi efektivitas perawatan kulit.
-- **Modern Clean Interface:** Pengalaman pengguna yang nyaman dan responsif dibangun menggunakan Flutter.`,
+Saya bertanggung jawab sebagai Project Manager, mengoordinasikan tim beranggotakan 5 orang, mengatur pembagian tugas, dan memantau progres pengembangan aplikasi.`,
+    content_en: `### Overview
+
+SkinSight is a mobile application designed to help identify facial skin concerns through visual scanning. Scan results are used to create a treatment timeline and monitor progress over time.
+
+### Role
+
+I serve as the Project Manager, coordinating a 5-member team, assigning tasks, and monitoring the application's development progress.`,
     is_show: true,
     is_featured: true,
-    featured_tag: "Berkaitan dengan Application Development",
+    featured_tag: "Academic Project",
   },
   {
     id: 4,
     title: "Ransomware Proof of Concept (PoC)",
     slug: "ransomware-poc",
     description:
-      "Riset Proof of Concept (PoC) untuk mempelajari mekanisme enkripsi ransomware, perilaku payload, dan pengujian mitigasi keamanan siber di lingkungan sandbox terisolasi.",
+      "PoC untuk mempelajari mekanisme ransomware dan pengujian keamanan di lingkungan terisolasi.",
+    description_en:
+      "A proof of concept for studying ransomware mechanisms and security testing in an isolated environment.",
     image: "/images/projects/ransomware-poc.png",
     link_demo: "",
     link_github: "https://github.com/adamarsyadfaizin/My-Collection-Malicious-Program",
     stacks: ["Python", "Cybersecurity", "Git & GitHub"],
     content: `### Overview
 
-Membuat riset Proof of Concept (PoC) non-malicious untuk mempelajari mekanisme kerja ransomware dan pengujian keamanan siber di lingkungan terisolasi (sandbox).
+Proyek Proof of Concept (PoC) untuk mempelajari mekanisme ransomware dan pengujian keamanan di lingkungan terisolasi.
 
-### Ruang Lingkup Riset
-- **Analisis Alur Enkripsi:** Mempelajari arsitektur kriptografi dan pertukaran kunci yang digunakan malware ransomware.
-- **Pengujian Keamanan Endpoint:** Mengevaluasi efektivitas deteksi sistem proteksi dan perilaku payload saat runtime.
-- **Strict Isolated Environment:** Seluruh aktivitas pengujian dijalankan pada virtual machine terisolasi tanpa akses jaringan eksternal untuk tujuan edukasi dan pertahanan siber.`,
+Seluruh eksperimen dilakukan untuk tujuan pembelajaran pada lingkungan uji yang terkontrol.`,
+    content_en: `### Overview
+
+A proof of concept created to study ransomware mechanisms and security testing in an isolated environment.
+
+All experiments are intended for learning and are conducted in a controlled test environment.`,
     is_show: true,
-    is_featured: true,
-    featured_tag: "Berkaitan dengan CyberSec",
+    is_featured: false,
   },
   {
     id: 5,
     title: "Berlima Guest House — Room Booking Platform",
     slug: "berlima-guest-house",
     description:
-      "Pengembangan website pemesanan kamar untuk Berlima Guest House di Kota Batu, Jawa Timur, sebagai solusi digital untuk mempermudah proses pemesanan kamar dan informasi reservasi.",
+      "Pengembangan website Berlima Guest House sebagai proyek tim, dengan koordinasi pengembangan oleh Project Manager dan tim beranggotakan 4 orang.",
+    description_en:
+      "Development of the Berlima Guest House website as a team project, coordinated by a Project Manager with a 4-member team.",
     image: "/images/projects/berlima-guest-house.png",
     link_demo: "",
     link_github: "https://github.com/adamarsyadfaizin/PBL-Team1",
     stacks: ["Laravel", "PHP", "HTML", "CSS", "JavaScript"],
     content: `### Overview
 
-Pengembangan website pemesanan kamar untuk Berlima Guest House, sebuah usaha penginapan yang berlokasi di Kota Batu, Jawa Timur. Website ini dikembangkan sebagai solusi digital untuk mempermudah proses pemesanan kamar dan diperkenalkan langsung kepada pemilik usaha Berlima Guest House.
+Website Berlima Guest House dikembangkan sebagai proyek tim. Saya berperan sebagai Project Manager dengan mengoordinasikan 4 anggota tim, mengatur pembagian tugas, dan memantau progres pengembangan website.
 
-### Fitur Utama
-- **Katalog Kamar Digital:** Menampilkan tipe kamar, tarif, dan fasilitas lengkap dengan tampilan visual yang menarik.
-- **Sistem Reservasi:** Mempermudah calon tamu dalam merencanakan masa menginap dan memesan kamar secara langsung.
-- **Desain Responsif:** Desain website yang adaptif dan cepat diakses melalui berbagai perangkat seluler dan desktop.`,
+### Tech Stack
+
+- Laravel
+- PHP
+- HTML, CSS, dan JavaScript`,
+    content_en: `### Overview
+
+The Berlima Guest House website was developed as a team project. I served as Project Manager, coordinating 4 team members, assigning tasks, and monitoring the website development progress.
+
+### Tech Stack
+
+- Laravel
+- PHP
+- HTML, CSS, and JavaScript`,
+    is_show: true,
+    is_featured: false,
+  },
+  {
+    id: 6,
+    title: "APK Invitation Analysis",
+    slug: "apk-invitation-analysis",
+    description:
+      "Reverse engineering APK undangan pernikahan mencurigakan untuk mempelajari struktur dan perilaku aplikasinya.",
+    description_en:
+      "Reverse engineering of a suspicious wedding invitation APK to study its structure and application behavior.",
+    image: "/images/placeholder.webp",
+    link_demo: "",
+    link_github: "https://github.com/adamarsyadfaizin/APK-UNDANGAN-ANALYSIS",
+    stacks: ["Reverse Engineering"],
+    content: `### Overview
+
+Analisis reverse engineering terhadap APK undangan pernikahan mencurigakan untuk mempelajari struktur internal dan perilaku aplikasinya.
+
+Repositori: [APK-UNDANGAN-ANALYSIS](https://github.com/adamarsyadfaizin/APK-UNDANGAN-ANALYSIS).`,
+    content_en: `### Overview
+
+Reverse engineering analysis of a suspicious wedding invitation APK to study its internal structure and application behavior.
+
+Repository: [APK-UNDANGAN-ANALYSIS](https://github.com/adamarsyadfaizin/APK-UNDANGAN-ANALYSIS).`,
     is_show: true,
     is_featured: false,
   },

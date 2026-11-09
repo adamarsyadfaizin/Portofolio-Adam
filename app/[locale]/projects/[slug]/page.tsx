@@ -32,7 +32,10 @@ export const generateMetadata = async ({
 
   return {
     title: `${project.title} ${METADATA.exTitle}`,
-    description: project.description,
+    description:
+      locale === "en" && project.description_en
+        ? project.description_en
+        : project.description,
     openGraph: {
       images: project.image,
       url: `${METADATA.openGraph.url}/${project.slug}`,
@@ -50,11 +53,15 @@ export const generateMetadata = async ({
 
 const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
   const data = await getProjectDetail(params?.slug);
+  const description =
+    params.locale === "en" && data.description_en
+      ? data.description_en
+      : data.description;
 
   return (
     <Container data-aos="fade-up">
       <BackButton url="/projects" />
-      <PageHeading title={data?.title} description={data?.description} />
+      <PageHeading title={data?.title} description={description} />
       <ProjectDetail {...data} />
     </Container>
   );

@@ -42,9 +42,13 @@ const EducationCard = ({
       )}
 
       <div className="space-y-1">
-        <a href={link || "#"} target="_blank">
+        {link ? (
+          <a href={link} target="_blank" rel="noreferrer">
+            <h6>{school}</h6>
+          </a>
+        ) : (
           <h6>{school}</h6>
-        </a>
+        )}
         <div className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
           <div className="flex flex-col gap-1 md:flex-row md:gap-2">
             <span>{degree}</span>

@@ -23,6 +23,8 @@ const SKILL_ROLES: Record<string, "app_dev" | "cyber_sec" | "both"> = {
   MySQL: "app_dev",
   Firebase: "app_dev",
   "Git & GitHub": "both",
+  Automation: "app_dev",
+  "Computer Vision": "app_dev",
   Cybersecurity: "cyber_sec",
 };
 

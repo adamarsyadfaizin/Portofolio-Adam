@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import Tooltip from "@/common/components/elements/Tooltip";
 import Image from "@/common/components/elements/Image";
@@ -15,8 +15,11 @@ const ProjectDetail = ({
   link_demo,
   link_github,
   content,
+  content_en,
 }: ProjectItem) => {
   const t = useTranslations("ProjectsPage");
+  const locale = useLocale();
+  const displayContent = locale === "en" && content_en ? content_en : content;
 
   return (
     <div className="space-y-8">
@@ -70,9 +73,9 @@ const ProjectDetail = ({
         />
       </div>
 
-      {content ? (
+      {displayContent ? (
         <div className="mt-5 space-y-6 leading-[1.8] dark:text-neutral-300">
-          <MDXComponent>{content}</MDXComponent>
+          <MDXComponent>{displayContent}</MDXComponent>
         </div>
       ) : null}
     </div>

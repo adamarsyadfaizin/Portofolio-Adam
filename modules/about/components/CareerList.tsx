@@ -5,16 +5,13 @@ import { HiOutlineBriefcase as CareerIcon } from "react-icons/hi";
 
 import SectionHeading from "@/common/components/elements/SectionHeading";
 import SectionSubHeading from "@/common/components/elements/SectionSubHeading";
-import { CAREERS } from "@/common/constants/carreers";
+import { CAREER_GROUPS } from "@/common/constants/carreers";
 
 import CareerCard from "./CareerCard";
 
 const CareerList = () => {
   const t = useTranslations("AboutPage.career");
-
-  const filteredCareers = CAREERS?.filter((career) => career.isShow).sort(
-    (a, b) => (b.is_pinned ? 1 : 0) - (a.is_pinned ? 1 : 0),
-  );
+  const visibleGroups = CAREER_GROUPS.filter((group) => group.isShow);
 
   return (
     <section className="space-y-6">
@@ -26,8 +23,8 @@ const CareerList = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-4">
-        {filteredCareers?.map((career, index) => (
-          <CareerCard key={index} indexCareer={index} {...career} />
+        {visibleGroups.map((group) => (
+          <CareerCard key={group.company} {...group} />
         ))}
       </div>
     </section>

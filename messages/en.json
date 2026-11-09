@@ -4,7 +4,7 @@
     "location": "Based in Malang, East Java, Indonesia 🇮🇩",
     "location_type": "Onsite",
     "resume": {
-      "paragraph_1": "I am an Informatics Engineering student at Politeknik Negeri Malang with experience in developing various applications and software. My primary focus is Application Development, strongly complemented by Cybersecurity as my secondary hobby and passion, alongside Data Processing/Automation in building technological solutions. I am deeply interested in exploring application development to solve real-world problems through robust technology.",
+      "paragraph_1": "I am a Diploma IV Informatics Engineering student at Politeknik Negeri Malang with a GPA of 3.62. I have experience in application development, process automation, and website maintenance. I have contributed to the CORDS computer vision application and developed CKG Helper to assist with Free Health Check data entry. I also explore application security independently through APK analysis and security experiments in an isolated environment. I am currently interested in deepening my knowledge of software engineering, backend systems, and machine learning.",
       "paragraph_2": ""
     },
     "skills": {
@@ -17,13 +17,13 @@
     },
     "error": "An error occurred on the server.",
     "no_data": "No data available.",
-    "specialization": "Application Development | CyberSec"
+    "specialization": "Application Development | Independent Security Research"
   },
   "AboutPage": {
     "title": "About",
     "description": "A brief introduction to who I am.",
     "resume": {
-      "paragraph_1": "I am an Informatics Engineering student at Politeknik Negeri Malang with experience in developing various applications and software. My primary focus is Application Development, strongly complemented by Cybersecurity as my secondary hobby and passion, alongside Data Processing/Automation in building technological solutions. I am deeply interested in exploring application development to solve real-world problems through robust technology.",
+      "paragraph_1": "I am a Diploma IV Informatics Engineering student at Politeknik Negeri Malang with a GPA of 3.62. I have experience in application development, process automation, and website maintenance. I have contributed to the CORDS computer vision application and developed CKG Helper to assist with Free Health Check data entry. I also explore application security independently through APK analysis and security experiments in an isolated environment. I am currently interested in deepening my knowledge of software engineering, backend systems, and machine learning.",
       "paragraph_2": "",
       "paragraph_3": "",
       "paragraph_4": "Warm regards, Adam"
